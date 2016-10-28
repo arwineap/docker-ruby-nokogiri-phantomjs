@@ -9,7 +9,6 @@ RUN set -x \
     && apt-get update \
     && apt-get install -y wget libfontconfig1 \
     && rm -rf /var/lib/apt/lists/* \
-    https://github.com/Medium/phantomjs/archive/2.1.13.tar.gz
     && wget -O /tmp/phantomjs-2.1.13.tar.gz https://github.com/Medium/phantomjs/archive/2.1.13.tar.gz \
     && apt-get remove -y wget \
     && md5sum /tmp/phantomjs-2.1.13.tar.gz \
