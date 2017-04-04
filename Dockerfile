@@ -1,7 +1,7 @@
 FROM ruby:slim
 
 RUN apt-get update \
-    && apt-get install -y ruby-dev zlib1g-dev liblzma-dev build-essential git \
+    && apt-get install -y ruby-dev zlib1g-dev liblzma-dev build-essential git expect-dev \
     && rm -rf /var/lib/apt/lists/* \
     && gem install nokogiri
 
